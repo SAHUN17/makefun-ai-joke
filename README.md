@@ -1,14 +1,14 @@
 # makefun-ai-joke
 
-Entry for make.fun bounty **ai-joke-03 — Make the AI judge laugh**.
+Entry for the make.fun bounty [ai-joke-03](https://make.fun/bounty/ai-joke-03).
 
-`main.py` writes a single one-liner about AI coding agents to `/output/entry.txt`
-(UTF-8, 1–280 code points, deterministic across runs).
+A dependency-free Python 3 program that writes one joke (a one-liner about AI
+coding agents) to `/output/entry.txt`, UTF-8 with a trailing newline.
 
-Run locally:
+Output is deterministic: no randomness, no network, only the `os` module.
+
+Run it:
 
 ```sh
-mkdir -p /tmp/out && sed 's#/output/entry.txt#/tmp/out/entry.txt#' main.py > /tmp/m.py && python3 /tmp/m.py && cat /tmp/out/entry.txt
+python3 main.py
 ```
-
-Bounty: https://make.fun/bounty/ai-joke-03
